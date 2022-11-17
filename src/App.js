@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+function Titulo() {
+  return <h3>Primer aplicativo React</h3>;
+}
+function Cabecera() {
+  return <header>
+    <Titulo></Titulo>
+  </header>;
+}
+function Cuerpo() {
+  return <div>Hola Mundo</div>;
+}
+function Pie() {
+  return <footer>Informacion / Direccion / telefono</footer>;
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Cabecera />
+      <Cuerpo />
+      <Cuerpo />
+      <Cuerpo />
+      <Pie />
     </div>
   );
 }
